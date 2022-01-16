@@ -1,8 +1,13 @@
 const http = require('http').createServer();
 const io = require('socket.io')(http);
+const app = require('express')();
 
+app.get('/', (req, res) => {
+    console.log('okayyy');
+    res.send('connected')
+})
 
-http.listen(process.env.PORT || 3000, () => console.log('server listening on port: 3000'))
+app.listen(process.env.PORT || 3000, () => console.log('server listening on port: 3000'))
 
 
 
