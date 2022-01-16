@@ -1,4 +1,4 @@
-var socket = require('socket.io-client')('http://localhost:3000s');
+var socket = require('socket.io-client')('http://localhost:3000');
   const repl = require('repl')
   const chalk = require('chalk');
 
